@@ -38,7 +38,7 @@ class enrol_badgeenrol_edit_form extends moodleform {
 
         $mform->addElement('header', 'header', get_string('pluginname', 'enrol_badgeenrol'));
 
-        if ($badges = $DB->get_records('badge', array('type' => 1))) {
+        if ($badges = $DB->get_records('badge')) {
 
             $mform->addElement('text', 'name', get_string('custominstancename', 'enrol'));
             $mform->setType('name', PARAM_TEXT);

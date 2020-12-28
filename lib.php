@@ -174,7 +174,7 @@ class enrol_badgeenrol_plugin extends enrol_plugin {
 
                 $name = html_writer::tag('span', $badge->name, array('class' => 'badge-name'));
                 $image = html_writer::empty_tag('img', $attributes);
-                $url = new moodle_url('/badges/view.php', array('type' => 1));
+                $url = new moodle_url('/badges/view.php');
 
                 $badgeout = html_writer::link($url, $image.$name, array('title' => $badge->name, 'class' => 'requiredbadge'));
 
